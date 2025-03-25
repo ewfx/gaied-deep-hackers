@@ -1,0 +1,9 @@
+flask
+flask-cors
+pdfplumber
+pytesseract
+transformers
+torch
+google-generativeai
+email
+openai

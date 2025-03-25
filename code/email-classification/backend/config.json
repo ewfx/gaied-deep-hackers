@@ -1,0 +1,16 @@
+{
+    "request_type_mapping": {
+        "money movement - inbound": [
+            "Inward Remittance",
+            "Advance Import Payment",
+            "Direct Import Payment",
+            "Import Bill for Collection"
+        ],
+        "money movement - outbound": [
+            "Export Bill for Collection",
+            "Advance Payment towards Import of Goods",
+            "Open Account Import Payments",
+            "Payment/Acceptance of Import Bill under Collection"
+        ]
+    }
+}
