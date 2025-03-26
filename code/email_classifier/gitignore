@@ -1,0 +1,38 @@
+# 🛑 Ignore Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# 🛑 Ignore system files
+.DS_Store
+Thumbs.db
+
+# 🛑 Ignore Logs & Temporary files
+logs/
+*.log
+*.sqlite3
+.env
+
+# 🛑 Ignore Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# 🛑 Ignore React build files
+frontend/build/
+frontend/.cache/
+
+# 🛑 Ignore VSCode & IntelliJ settings
+.vscode/
+.idea/
+*.iml
+
+# 🛑 Ignore macOS files
+*.swp
+
+# 🛑 Ignore Flask & Python cache
+instance/
+.mypy_cache/
