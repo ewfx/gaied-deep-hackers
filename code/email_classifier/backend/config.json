@@ -1,0 +1,110 @@
+{
+    "OPENAI_API_KEY": "",
+    "TESSERACT_PATH": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "attachments_dir": "attachments",
+    "processed_emails_file": "processed_emails.json",
+    "seen_hashes_file": "seen_hashes.json",
+    "prioritize_email": true,
+    "extract_numerical_from_attachments": true,
+    "classification_criteria": {
+        "Adjustment": [],
+        "AU Transfer": [],
+        "Closing Notice": ["Reallocation Fees", "Amendment Fees", "Reallocation Principal"],
+        "Commitment Change": ["Cashless Roll", "Decrease", "Increase"],
+        "Fee Payment": ["Ongoing Fee", "Letter of Credit Fee"],
+        "Money Movement - Inbound": ["Principal", "Interest", "Principal + Interest", "Principal + Interest + Fee"],
+        "Money Movement - Outbound": ["Timebound", "Foreign Currency"]
+    },
+
+    "extractable_fields": [
+        "Deal Name",
+        "CUSIP",
+        "ISIN",
+        "Lender MEI",
+        "Previous Principal Balance",
+        "New Principal Balance",
+        "Interest Amount",
+        "Fees",
+        "Total Payment Amount",
+        "Expiration Date",
+        "ABA Number",
+        "Account Number"
+    ],
+
+    "roles_and_skills": {
+        "Adjustment": {
+            "role": "Financial Analyst",
+            "assigned_to": "John Doe"
+        },
+        "AU Transfer": {
+            "role": "Banking Operations Specialist",
+            "assigned_to": "AU Transfer Team"
+        },
+        "Closing Notice": {
+            "Reallocation Fees": {
+                "role": "Senior Accountant",
+                "assigned_to": "Finance Team"
+            },
+            "Amendment Fees": {
+                "role": "Legal Compliance Officer",
+                "assigned_to": "Legal Team"
+            },
+            "Reallocation Principal": {
+                "role": "Risk Management Specialist",
+                "assigned_to": "Risk Team"
+            }
+        },
+        "Commitment Change": {
+            "Cashless Roll": {
+                "role": "Portfolio Manager",
+                "assigned_to": "Investment Team"
+            },
+            "Decrease": {
+                "role": "Financial Controller",
+                "assigned_to": "Finance Team"
+            },
+            "Increase": {
+                "role": "Loan Officer",
+                "assigned_to": "Lending Team"
+            }
+        },
+        "Fee Payment": {
+            "Ongoing Fee": {
+                "role": "Billing Specialist",
+                "assigned_to": "Accounts Payable Team"
+            },
+            "Letter of Credit Fee": {
+                "role": "Trade Finance Expert",
+                "assigned_to": "Trade Finance Team"
+            }
+        },
+        "Money Movement - Inbound": {
+            "Principal": {
+                "role": "Treasury Analyst",
+                "assigned_to": "Treasury Team"
+            },
+            "Interest": {
+                "role": "Fixed Income Specialist",
+                "assigned_to": "Interest Management Team"
+            },
+            "Principal + Interest": {
+                "role": "Corporate Banking Specialist",
+                "assigned_to": "Corporate Banking Team"
+            },
+            "Principal + Interest + Fee": {
+                "role": "Senior Finance Manager",
+                "assigned_to": "Finance Management Team"
+            }
+        },
+        "Money Movement - Outbound": {
+            "Timebound": {
+                "role": "Payments Specialist",
+                "assigned_to": "Payments Team"
+            },
+            "Foreign Currency": {
+                "role": "Forex Specialist",
+                "assigned_to": "Foreign Exchange Desk"
+            }
+        }
+    }
+}
