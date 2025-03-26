@@ -12,7 +12,7 @@ This project is designed to classify emails by analyzing their content and extra
 ✔ **Extracts email content & attachments**  
 ✔ **User-friendly React UI with Flask API backend**  
 
----
+---  
 
 ## **📁 Folder Structure**
 ```
@@ -42,8 +42,8 @@ This project is designed to classify emails by analyzing their content and extra
 
 ### **🔹 1. Clone the Repository**
 ```sh
-git clone https://github.com/your-repo/email-classification.git  
-cd email-classification  
+git clone https://github.com/your-repo/email_classifier.git  
+cd email_classifier  
 ```
 
 ---
