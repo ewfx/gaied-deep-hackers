@@ -8,8 +8,10 @@ from file_handler import (
     load_seen_hashes, save_seen_hashes,
     load_processed_emails, save_processed_email
 )
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 @app.route("/process-email", methods=["POST"])
 def process_email():
